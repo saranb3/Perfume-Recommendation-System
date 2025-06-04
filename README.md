@@ -1,0 +1,1 @@
+This is a full stack project aimed to help users find their ideal perfume!
