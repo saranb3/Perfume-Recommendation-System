@@ -35,3 +35,10 @@ print(f"\nAny remaining null notes? {perfume_cleaned_dataset['Notes'].isnull().s
 # Create a csv file with the cleaned dataset and add it into the 'database' folder
 filepath = Path('database/perfume_cleaned_database.csv')
 perfume_cleaned_dataset.to_csv(filepath, index=False)
+
+# Check if csv saved
+if filepath.exists():
+    print(f"✅ Successfully saved {len(perfume_cleaned_dataset)} perfumes to {filepath}")
+    print(f"File size: {filepath.stat().st_size / 1024:.1f} KB")
+else:
+    print("❌ Error: File was not saved!")
