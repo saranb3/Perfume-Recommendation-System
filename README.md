@@ -1,1 +1,1 @@
-This is a full stack project aimed to help users find their ideal perfume!
+Web App to help users find similiar perfumes based on perfume notes!
